@@ -1,0 +1,27 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: equipment
+      POSTGRES_USER: equipment
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-equipment_dev}
+    ports: ["127.0.0.1:5432:5432"]
+    volumes: ["equipment-data:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U equipment -d equipment"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  api:
+    build: .
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__Database: Host=db;Database=equipment;Username=equipment;Password=${POSTGRES_PASSWORD:-equipment_dev}
+      Seed__AdminPassword: ${ADMIN_PASSWORD:?Set ADMIN_PASSWORD in .env}
+      Seed__AdminEmail: ${ADMIN_EMAIL:-admin@equipment.local}
+    ports: ["127.0.0.1:5080:8080"]
+    depends_on:
+      db:
+        condition: service_healthy
+volumes:
+  equipment-data:

@@ -1,0 +1,57 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5E346F33-80DB-4584-87DF-96190312BB87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquipmentBooking.Api", "src\EquipmentBooking.Api\EquipmentBooking.Api.csproj", "{C2FC60EB-61CE-46C0-857D-D5DC2B557A73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{60BCD5B6-5287-42AE-8198-D26C8E0C62B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquipmentBooking.Tests", "tests\EquipmentBooking.Tests\EquipmentBooking.Tests.csproj", "{079EB185-E8A1-4E31-A50A-AC991D3822D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquipmentBooking.Domain", "src\EquipmentBooking.Domain\EquipmentBooking.Domain.csproj", "{26B2D306-F4DA-4116-89DE-906BD292E8FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquipmentBooking.Application", "src\EquipmentBooking.Application\EquipmentBooking.Application.csproj", "{C1630AD3-FCF8-40E8-8196-B302D7324820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EquipmentBooking.Infrastructure", "src\EquipmentBooking.Infrastructure\EquipmentBooking.Infrastructure.csproj", "{C65F7414-6975-4FA4-AE4C-F2BCFE0CE196}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2FC60EB-61CE-46C0-857D-D5DC2B557A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2FC60EB-61CE-46C0-857D-D5DC2B557A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2FC60EB-61CE-46C0-857D-D5DC2B557A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2FC60EB-61CE-46C0-857D-D5DC2B557A73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{079EB185-E8A1-4E31-A50A-AC991D3822D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{079EB185-E8A1-4E31-A50A-AC991D3822D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{079EB185-E8A1-4E31-A50A-AC991D3822D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{079EB185-E8A1-4E31-A50A-AC991D3822D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B2D306-F4DA-4116-89DE-906BD292E8FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B2D306-F4DA-4116-89DE-906BD292E8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26B2D306-F4DA-4116-89DE-906BD292E8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26B2D306-F4DA-4116-89DE-906BD292E8FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1630AD3-FCF8-40E8-8196-B302D7324820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1630AD3-FCF8-40E8-8196-B302D7324820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1630AD3-FCF8-40E8-8196-B302D7324820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1630AD3-FCF8-40E8-8196-B302D7324820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C65F7414-6975-4FA4-AE4C-F2BCFE0CE196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65F7414-6975-4FA4-AE4C-F2BCFE0CE196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65F7414-6975-4FA4-AE4C-F2BCFE0CE196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65F7414-6975-4FA4-AE4C-F2BCFE0CE196}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2FC60EB-61CE-46C0-857D-D5DC2B557A73} = {5E346F33-80DB-4584-87DF-96190312BB87}
+		{079EB185-E8A1-4E31-A50A-AC991D3822D9} = {60BCD5B6-5287-42AE-8198-D26C8E0C62B2}
+		{26B2D306-F4DA-4116-89DE-906BD292E8FF} = {5E346F33-80DB-4584-87DF-96190312BB87}
+		{C1630AD3-FCF8-40E8-8196-B302D7324820} = {5E346F33-80DB-4584-87DF-96190312BB87}
+		{C65F7414-6975-4FA4-AE4C-F2BCFE0CE196} = {5E346F33-80DB-4584-87DF-96190312BB87}
+	EndGlobalSection
+EndGlobal
